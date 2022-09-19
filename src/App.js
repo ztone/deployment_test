@@ -36,19 +36,18 @@ class App extends Component {
           <span>Stone Gislason</span>
         </header>
         <nav className="nav-drill">
-
-        <ul className="nav-items">
-			    <li className="nav-item nav-expand">
-            <a className="nav-link nav-expand-link" href="#">
-              Influencers
-            </a>
-          </li>
-          <li className="nav-item nav-expand">
-            <a className="nav-link nav-expand-link" href="#">
-              Commissioner
-            </a>
-          </li>
-        </ul>
+          <ul className="nav-items">
+            <li className="nav-item nav-expand">
+              <a className="nav-link nav-expand-link" href="#">
+                Influencers
+              </a>
+            </li>
+            <li className="nav-item nav-expand">
+              <a className="nav-link nav-expand-link" href="#">
+                Commissioner
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     );
