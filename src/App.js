@@ -30,15 +30,12 @@ class App extends Component {
     const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'))
     //console.log(navExpand);
 
-    navExpand.forEach(item => {
-      
-      console.log("stup");
-      console.log(item.querySelector('.nav-expand-content'));
-      
+    navExpand.forEach(item => {  
       if(item.querySelector('.nav-expand-content') != null) 
       {
         item.querySelector('.nav-expand-content').insertAdjacentHTML('afterbegin', backLink)
       }
+
       item.querySelector('.nav-link').addEventListener('click', () => item.classList.add('active'))
       
       if(item.querySelector('.nav-back-link') != null) 
@@ -62,30 +59,205 @@ class App extends Component {
           <span>Stone Gislason</span>
         </header>
         <nav className="nav-drill">
-          <ul className="nav-items nav-level-1">
-            <li className="nav-item nav-expand">
+          <ul class="nav-items nav-level-1">
+          <li className="nav-item nav-expand">
               <a className="nav-link nav-expand-link" href="#">
                 Menu
               </a>
               <ul className="nav-items nav-expand-content">
-                <li className="nav-item nav-expand">
-                  <a className="nav-link nav-expand-link" href="#">
+                
+                <li class="nav-item nav-expand">
+                  <a class="nav-link nav-expand-link" href="#">
                     Influencers
                   </a>
-                  <ul className="nav-items nav-expand-content">
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">
-                        Favirutes Influencers
+                  <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Finder
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Map View
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        List View
+                      </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                      <a class="nav-link nav-expand-link" href="#">
+                        Favorites
+                      </a>
+                      <ul class="nav-items nav-expand-content">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            Favirutes Influencers
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            Saved Searches
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            Autofind for a campain
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-expand">
+                  <a class="nav-link nav-expand-link" href="#">
+                    Commissioners
+                  </a>
+                  <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Search Hotels
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        View Campains
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Apply for a Voucher
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item nav-expand">
-                  <a className="nav-link nav-expand-link" href="#">
-                    Commissioner
+                <li class="nav-item nav-expand">
+                  <a class="nav-link nav-expand-link" href="#">
+                    Campain Management
                   </a>
+                  <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Vouchers
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Campain
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Generate Voucher
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-expand">
+                  <a class="nav-link nav-expand-link" href="#">
+                    Scheduler
+                  </a>
+                  <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Calender View
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Book
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-expand">
+                  <a class="nav-link nav-expand-link" href="#">
+                    Awards
+                  </a>
+                  <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        About
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Where am I?
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Reports
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Manage
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-expand">
+                  <a class="nav-link nav-expand-link" href="#">
+                    Community
+                  </a>
+                  <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Blogs
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Social Calender
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Chats
+                      </a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
+            </li>
+            <li class="nav-item nav-expand">
+              <a class="nav-link nav-expand-link" href="#">
+                My Profile
+              </a>
+              <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        View
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Promote me
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Reports
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        My Vouchers
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        My Awards
+                      </a>
+                    </li>
+                  </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                About Us
+              </a>
             </li>
           </ul>
         </nav>
