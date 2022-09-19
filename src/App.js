@@ -79,17 +79,19 @@ class App extends Component {
 
     //this.setState({ isActive: isActive });
 
-    let div;
+    let menu;
     if(this.state.isActive)
     {
-      console.log("active");
+      menu = "nav-is-toggled";
     }
     else
     {
-      console.log("not active");
+      menu = "nav-is-toggled-nnnnnoooootttt";
+      
     }
+    console.log(menu);
     return (
-      <div className="nav-is-toggled">
+      <div className={menu}>
         <header className='nav-top'>Voice of Influence
           <span className="hamburger material-icons" id="ham">menu</span>
           <span>Stone Gislason</span>
