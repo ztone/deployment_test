@@ -21,13 +21,30 @@ class App extends Component {
       self.setState({ isActive: !self.state.isActive });
     });
 
+    const backLink = `<li class="nav-item">
+	<a class="nav-link nav-back-link" href="javascript:;">
+		Back
+	</a>
+</li>`
+
     const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'))
-    console.log(navExpand);
+    //console.log(navExpand);
 
     navExpand.forEach(item => {
-      //item.querySelector('.nav-expand-content').insertAdjacentHTML('afterbegin', backLink)
+      
+      console.log("stup");
+      console.log(item.querySelector('.nav-expand-content'));
+      
+      if(item.querySelector('.nav-expand-content') != null) 
+      {
+        item.querySelector('.nav-expand-content').insertAdjacentHTML('afterbegin', backLink)
+      }
       item.querySelector('.nav-link').addEventListener('click', () => item.classList.add('active'))
-      //item.querySelector('.nav-back-link').addEventListener('click', () => item.classList.remove('active'))
+      
+      if(item.querySelector('.nav-back-link') != null) 
+      {
+        item.querySelector('.nav-back-link').addEventListener('click', () => item.classList.remove('active'));
+      }
     })
   }
   
@@ -55,6 +72,13 @@ class App extends Component {
                   <a className="nav-link nav-expand-link" href="#">
                     Influencers
                   </a>
+                  <ul className="nav-items nav-expand-content">
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">
+                        Favirutes Influencers
+                      </a>
+                    </li>
+                  </ul>
                 </li>
                 <li className="nav-item nav-expand">
                   <a className="nav-link nav-expand-link" href="#">
