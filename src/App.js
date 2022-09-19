@@ -27,15 +27,7 @@ class App extends Component {
     const isActive = !this.state.isActive;
     const { posts } = this.state;
 
-    let menu;
-    if(this.state.isActive)
-    {
-      menu = "nav-is-toggled";
-    }
-    else
-    {
-      menu = "nav-is-toggled-nnnnnoooootttt";
-    }
+    let menu = this.state.isActive ? "nav-is-toggled" : ""
 
     return (
       <div className={menu}>
