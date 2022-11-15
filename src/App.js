@@ -12,9 +12,14 @@ class App extends Component {
   }
   
   render() {
-    return ( {
-      <body>Hello</body>
-  });
+    return ( 
+      <div>
+        <a href='hotels'>Hotels</a>
+        <a href='campains'>My Campains</a>
+        <a href='profile'>My Profile</a>
+        <a href='aboutus'>About Us</a>
+      </div>
+  );
 }
 }
 
