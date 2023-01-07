@@ -14,10 +14,12 @@ class App extends Component {
   render() {
     return ( 
       <div>
-        <a href='hotels'>Hotels</a>
-        <a href='campains'>My Campains</a>
-        <a href='profile'>My Profile</a>
-        <a href='aboutus'>About Us</a>
+        <ul>
+          <li><a href='hotels'>Hotels</a></li>
+          <li><a href='campains'>My Campains</a></li>
+          <li><a href='profile'>My Profile</a></li>
+          <li><a href='aboutus'>About Us</a></li>
+        </ul>
       </div>
   );
 }
