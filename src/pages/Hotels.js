@@ -1,11 +1,18 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 export default function UserPage() {
-let { id } = useParams();
+let { search } = useParams();
 return (
 <>
-<h1>Hotels {id}</h1>
-<p>This is your awesome User Profile page, yeah</p>
+<form action="/hotels">
+    <input type='text' placeholder='Search hotel' id="search" name="search"/>
+    <input type="submit" value="Filter" />
+</form>
+<h1>Hotels {search}</h1>
+<ul>
+    <li>Feldon Vally</li>
+    <li>Pennyhill Park</li>
+</ul>
 </>
 );
 }
