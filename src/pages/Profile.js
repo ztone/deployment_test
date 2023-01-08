@@ -41,7 +41,9 @@ return (
     </div>
   </div>
 </div>
-
+<div>
+    Bio: <input type="text" placeholder='Area to write/edit bio'></input>
+</div>
 </>
 );
 }
