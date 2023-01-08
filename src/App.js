@@ -1,4 +1,13 @@
 import React, { useState, Component } from 'react';
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Route,
+  Link,
+} from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import UserPage from './pages/UserPage';
 import "./App.css"
 
 class App extends Component {
@@ -10,17 +19,22 @@ class App extends Component {
   componentDidMount() {
     
   }
+
+  
   
   render() {
+  
+    const router = createBrowserRouter(
+      createRoutesFromElements(
+        <Route path='/' element={<HomePage />}>
+        <Route path='/:id' element={UserPage} />
+          
+        </Route>
+      )
+    );
+  
     return ( 
-      <div>
-        <ul>
-          <li><a href='hotels'>Hotels</a></li>
-          <li><a href='campains'>My Campains</a></li>
-          <li><a href='profile'>My Profile</a></li>
-          <li><a href='aboutus'>About Us</a></li>
-        </ul>
-      </div>
+      <RouterProvider router={router} />
   );
 }
 }
