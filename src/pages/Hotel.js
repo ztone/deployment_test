@@ -4,9 +4,11 @@ export default function Hotel() {
 let { search } = useParams();
 return (
 <>
-    <h1>Feldon Vally</h1>
-    <p>Sutton Lane, Lower Brailes, OX15 5BB</p>
-    <img src="/images/felldonvalley-big.png" alt="Girl in a jacket" />
+    <h1 class="text-center">Feldon Vally</h1>
+    <p class="text-center">Sutton Lane, Lower Brailes, OX15 5BB</p>
+    <p class="text-center">
+        <img src="/images/felldonvalley-big.png" alt="Girl in a jacket" />
+    </p>
     <div class="container">
     <div class="row">
         <div class="col-sm">

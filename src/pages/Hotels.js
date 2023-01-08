@@ -8,7 +8,7 @@ return (
     <input type='text' placeholder='Search hotel' id="search" name="search"/>
     <input type="submit" value="Filter" />
 </form>
-<h1>Hotels {search}</h1>
+<h1 >Hotels {search}</h1>
 <div class="container">
   <div class="row">
     <div class="col-sm">

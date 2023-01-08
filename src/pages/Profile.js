@@ -5,11 +5,14 @@ export default function Profile() {
 let { id } = useParams();
 return (
 <>
-<h1>My Profile {id}</h1>
+<h1 class="text-center">My Profile {id}</h1>
 <div class="container">
   <div class="row">
     <div class="col-sm">
-        <img src="images/profile.png" alt="Girl in a jacket" width="200"  />
+        <p class="text-center">
+            <img src="images/profile.png" alt="Girl in a jacket" width="200"  />
+        </p>
+        <p class="text-center">Change Profile Picture</p>
     </div>
     <div class="col-sm">
         <ul>
@@ -31,6 +34,9 @@ return (
             </Dropdown.Menu>
             </Dropdown>
             </li>
+            <li>Total multichannel audience</li>
+            <li>Keywords eg. Gym, travel, lifestyle</li>
+            <li>Performance Insights</li>
         </ul>
     </div>
   </div>
