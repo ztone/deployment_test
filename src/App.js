@@ -3,10 +3,11 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   RouterProvider,
+  Routes,
   Route,
   Link,
 } from 'react-router-dom';
-import HomePage from './pages/HomePage';
+import Root from './pages/Root';
 import UserPage from './pages/UserPage';
 import "./App.css"
 
@@ -24,14 +25,16 @@ class App extends Component {
   
   render() {
   
-    const router = createBrowserRouter(
-      createRoutesFromElements(
-        <Route path='/' element={<HomePage />}>
-        <Route path='/:id' element={UserPage} />
-          
-        </Route>
-      )
-    );
+    const router = createBrowserRouter([
+      {
+        path: "/",
+        element: <Root />,
+      },
+      {
+        path: ":id",
+        element: <UserPage />,
+      },
+    ]);
   
     return ( 
       <RouterProvider router={router} />
