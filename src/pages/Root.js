@@ -6,9 +6,10 @@ return (
 <>
 <h1>Voice of Influence</h1>
     <ul>
-        <li>
-            <Link to='about:id'>About Us</Link>
-        </li>
+        <li> <Link to='hotels'>Hotels</Link> </li>
+        <li> <Link to='campaigns'>My Campaigns</Link> </li>
+        <li> <Link to='profile'>My Profile</Link> </li>
+        <li> <Link to='about'>About Us</Link> </li>
     </ul>
 </>
 );

@@ -8,7 +8,10 @@ import {
   Link,
 } from 'react-router-dom';
 import Root from './pages/Root';
-import UserPage from './pages/UserPage';
+import Hotels from './pages/Hotels';
+import Campaign from './pages/Campaign';
+import Profile from './pages/Profile';
+import About from './pages/About';
 import "./App.css"
 
 class App extends Component {
@@ -21,8 +24,6 @@ class App extends Component {
     
   }
 
-  
-  
   render() {
   
     const router = createBrowserRouter([
@@ -31,8 +32,20 @@ class App extends Component {
         element: <Root />,
       },
       {
-        path: ":id",
-        element: <UserPage />,
+        path: "hotels",
+        element: <Hotels />,
+      },
+      {
+        path: "campaigns",
+        element: <Campaign />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
+      {
+        path: "about",
+        element: <About />,
       },
     ]);
   
