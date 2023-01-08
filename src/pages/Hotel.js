@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 export default function Hotel() {
 let { search } = useParams();
 return (
@@ -25,6 +25,9 @@ return (
             </div>
         </div>
     </div>
+    <p class="text-center">
+        <Link className='btn btn-dark' to="enquire">Enquire</Link>
+    </p>
 </>
 );
 }

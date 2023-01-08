@@ -10,6 +10,7 @@ import {
 import Root from './pages/Root';
 import Hotels from './pages/Hotels';
 import Hotel from './pages/Hotel';
+import Enquire from './pages/Enquire';
 import Campaigns from './pages/Campaigns';
 import Profile from './pages/Profile';
 import About from './pages/About';
@@ -39,6 +40,10 @@ class App extends Component {
       {
         path: "hotels/hotel/:id",
         element: <Hotel />,
+      },
+      {
+        path: "hotels/hotel/:id/enquire",
+        element: <Enquire />,
       },
       {
         path: "campaigns",
