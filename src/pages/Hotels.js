@@ -9,10 +9,28 @@ return (
     <input type="submit" value="Filter" />
 </form>
 <h1>Hotels {search}</h1>
-<ul>
-    <li> <Link to='hotel/1'>Feldon Vally</Link> </li>
-    <li> <Link to='hotel/2'>Pennyhill Park</Link> </li>
-</ul>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+        <Link to='hotel/1'>Feldon Vally</Link><br/>
+        <p>Sutton Lane, Lower Brailes, OX15 5BB</p>
+        <img src="images/felldonvalley.png" alt="Girl in a jacket" width="200"  />
+    </div>
+    <div class="col-sm">
+        General description of campaign & keywords they are looking for
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+        <Link to='hotel/2'>Pennyhill Park</Link><br/>
+        <p>London Road, Bagshot, GU19 5EU</p>
+        <img src="images/pennyhillpark.png" alt="Girl in a jacket" width="200"  />
+    </div>
+    <div class="col-sm">
+        General description of campaign & keywords they are looking for
+    </div>
+  </div>
+</div>
 </>
 );
 }
