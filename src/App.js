@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import Root from './pages/Root';
 import Hotels from './pages/Hotels';
+import Hotel from './pages/Hotel';
 import Campaign from './pages/Campaign';
 import Profile from './pages/Profile';
 import About from './pages/About';
@@ -34,6 +35,10 @@ class App extends Component {
       {
         path: "hotels",
         element: <Hotels />,
+      },
+      {
+        path: "hotels/hotel/:id",
+        element: <Hotel />,
       },
       {
         path: "campaigns",
