@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-export default function UserPage() {
+export default function Hotel() {
 let { search } = useParams();
 return (
 <>

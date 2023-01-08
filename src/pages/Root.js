@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-export default function HomePage() {
+export default function Root() {
 return (
 <>
 <h1>Voice of Influence</h1>
