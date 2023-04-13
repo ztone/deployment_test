@@ -29,12 +29,12 @@ a:active {
   padding-right: 30px;
 }
 
-.float-r {
-  float: right;
+.recenter {
+  margin-left: 100px;
 }
 
-.text-c {
-  text-align: center;
+.recenter-menu {
+  margin-left: 20px;
 }
 
 .tag {
@@ -46,3 +46,8 @@ a:active {
   border: 1px solid black;
   padding: 5px 5px 5px 5px;  
 }
+
+.float-r {
+  float: right;
+}
+

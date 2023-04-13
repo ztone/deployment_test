@@ -10,7 +10,7 @@ return (
   <div className='float-r'>
     <Link class="btn btn-light menu-btn" to='/'>Menu</Link>
   </div>
-  <h1 class="text-center">My Profile {id}</h1>
+  <h1 class="text-center recenter">My Profile {id}</h1>
   <div class="row">
     <div class="col-sm">
         <p class="text-center">

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Menu() {
 return (
 <>
-<div class="display-1 text-center">VOi</div>
+<div class="display-1 text-center recenter-menu">VOi</div>
     <ul>
         <p class="text-center">
             <li> <Link className='btn btn-light btn-lg w-25' to='hotels'>Stays</Link> </li>

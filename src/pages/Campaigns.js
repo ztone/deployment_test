@@ -7,7 +7,7 @@ return (
 <div className='container mt-3'>
 <div className="btn btn-light menu-btn"><Link className="text-center" to='/'>Menu</Link></div>
     
-    <h1 class="text-center">My Campaigns</h1>
+    <h1 class="text-center recenter">My Campaigns</h1>
     <div class="container">
         <div class="row">
             <div class="col-sm">
