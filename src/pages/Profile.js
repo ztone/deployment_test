@@ -6,11 +6,11 @@ export default function Profile() {
 let { id } = useParams();
 return (
 <>
-<div class="float-right">
-  <span class="text-center">My Profile {id}</span>
-  <Link class="btn btn-dark" to='/'>Menu</Link>
-</div>
-<div class="container">
+<div class="container mt-3">  
+  <div className='float-r'>
+    <Link class="btn btn-light menu-btn" to='/'>Menu</Link>
+  </div>
+  <h1 class="text-center">My Profile {id}</h1>
   <div class="row">
     <div class="col-sm">
         <p class="text-center">
