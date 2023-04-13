@@ -41,3 +41,8 @@ a:active {
   margin-left: 30px;
   margin-right: 30px;
 }
+
+.box-text {
+  border: 1px solid black;
+  padding: 5px 5px 5px 5px;  
+}

@@ -4,10 +4,11 @@ export default function Hotel() {
 let { search } = useParams();
 return (
 <>
+<div className='container mt-3'>
+<div className='float-r'>
+    <Link className="btn btn-light menu-btn" to='/'>Menu</Link>
+  </div>
     <h1 class="text-center">Feldon Vally</h1>
-    <div className='float-right'>
-<Link className="btn btn-light text-center" to='/'>Menu</Link>
-</div>
     <p class="text-center">Sutton Lane, Lower Brailes, OX15 5BB</p>
     <p class="text-center">
         <img src="/images/felldonvalley-big.png" alt="Girl in a jacket" />
@@ -15,9 +16,9 @@ return (
     <div class="container">
     <div class="row">
         <div class="col-sm">
-            <p className="text-center">Foodie Golf Campaign</p>
-            <p>General description of hotel, facilities – more detailed info which can be used during the campaign posting</p>
-            <p>Terms and conditions for the campaign to be shown here.</p>
+            <p className="text-center fw-bold">Foodie Golf Campaign</p>
+            <p className='box-text'>General description of hotel, facilities – more detailed info which can be used during the campaign posting</p>
+            <p className='box-text'>Terms and conditions for the campaign to be shown here.</p>
         </div>
         <div class="col-sm">
             <input type="date" id="start" name="trip-start"
@@ -32,6 +33,7 @@ return (
     <p class="text-center">
         <Link className='btn btn-dark' to="enquire">Enquire</Link>
     </p>
+    </div>
 </>
 );
 }
