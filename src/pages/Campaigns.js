@@ -4,10 +4,10 @@ export default function Campaigns() {
 let { id } = useParams();
 return (
 <>
+<div className='container mt-3'>
+<div className="btn btn-light menu-btn"><Link className="text-center" to='/'>Menu</Link></div>
+    
     <h1 class="text-center">My Campaigns</h1>
-    <div className='float-right'>
-        <button className="btn btn-dark"><Link className="text-center" to='/'>Menu</Link></button>
-    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm">
@@ -22,17 +22,18 @@ return (
             </div>
         </div>
     </div>
-    <ul>
-        <li className='font-weight-bold'>Active Campaigns
+    <ul className='mt-3'>
+        <li><span className='fw-bold'>Active Campaigns</span>
             <p>Show hotels which have gone through to the active stage, links to internal ads. Shows stay to voucher expiry date</p>
         </li>
-        <li>Scheduled Campaigns
+        <li><span className='fw-bold'>Scheduled Campaigns</span>
             <p>Show hotels which have accepted campaign pitch</p>
         </li>
-        <li>Completed Campaigns
+        <li><span className='fw-bold'>Completed Campaigns</span>
             <p>Show each campaign with its corresponding hotel, Conversions, rev generated & influencer comms</p>
         </li>
     </ul>
+    </div>
 </>
 );
 }
