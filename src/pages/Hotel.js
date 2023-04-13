@@ -6,7 +6,7 @@ return (
 <>
     <h1 class="text-center">Feldon Vally</h1>
     <div className='float-right'>
-<button className="btn btn-dark"><Link className="text-center" to='/'>Menu</Link></button>
+<Link className="btn btn-light text-center" to='/'>Menu</Link>
 </div>
     <p class="text-center">Sutton Lane, Lower Brailes, OX15 5BB</p>
     <p class="text-center">

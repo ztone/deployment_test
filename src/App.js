@@ -15,7 +15,7 @@ import Campaigns from './pages/Campaigns';
 import Profile from './pages/Profile';
 import About from './pages/About';
 import "./App.css"
-import Home from './pages/Home';
+import Menu from './pages/Menu';
 
 class App extends Component {
 
@@ -32,7 +32,7 @@ class App extends Component {
     const router = createBrowserRouter([
       {
         path: "/",
-        element: <Home />,
+        element: <Menu />,
       },
       {
         path: "hotels",
