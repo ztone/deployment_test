@@ -5,6 +5,9 @@ let { search } = useParams();
 return (
 <>
     <h1 class="text-center">Feldon Vally</h1>
+    <div className='float-right'>
+<button className="btn btn-dark"><Link className="text-center" to='/'>Menu</Link></button>
+</div>
     <p class="text-center">Sutton Lane, Lower Brailes, OX15 5BB</p>
     <p class="text-center">
         <img src="/images/felldonvalley-big.png" alt="Girl in a jacket" />
@@ -12,8 +15,9 @@ return (
     <div class="container">
     <div class="row">
         <div class="col-sm">
-            <p>General description of hotel, facilities and types of room available</p>
-            <p>Description of the campaign, what they are looking for & what’s included for that date</p>
+            <p className="text-center">Foodie Golf Campaign</p>
+            <p>General description of hotel, facilities – more detailed info which can be used during the campaign posting</p>
+            <p>Terms and conditions for the campaign to be shown here.</p>
         </div>
         <div class="col-sm">
             <input type="date" id="start" name="trip-start"

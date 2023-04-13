@@ -15,12 +15,13 @@ import Campaigns from './pages/Campaigns';
 import Profile from './pages/Profile';
 import About from './pages/About';
 import "./App.css"
+import Home from './pages/Home';
 
 class App extends Component {
 
- constructor(props) {
+  constructor(props) {
     super(props);
-}
+  }
 
   componentDidMount() {
     
@@ -31,7 +32,7 @@ class App extends Component {
     const router = createBrowserRouter([
       {
         path: "/",
-        element: <Root />,
+        element: <Home />,
       },
       {
         path: "hotels",

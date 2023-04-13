@@ -1,10 +1,13 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 export default function Campaigns() {
 let { id } = useParams();
 return (
 <>
     <h1 class="text-center">My Campaigns</h1>
+    <div className='float-right'>
+        <button className="btn btn-dark"><Link className="text-center" to='/'>Menu</Link></button>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm">
@@ -20,7 +23,7 @@ return (
         </div>
     </div>
     <ul>
-        <li>Active Campaigns
+        <li className='font-weight-bold'>Active Campaigns
             <p>Show hotels which have gone through to the active stage, links to internal ads. Shows stay to voucher expiry date</p>
         </li>
         <li>Scheduled Campaigns
