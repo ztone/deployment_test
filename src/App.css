@@ -50,8 +50,12 @@ small-logo {
 }
 
 .tag {
-  margin-left: 30px;
-  margin-right: 30px;
+  background-color: #F9F7E7;
+  color: #414A4E;
+  border: 1px solid #414A4E;
+  font-size: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .box-text {
@@ -73,6 +77,23 @@ small-logo {
   margin-right: 10px;
 }
 
+.title {
+  font-size: 12px;
+}
+
+.address {
+  font-size: 10px;
+}
+
+.description {
+  font-size: 9px;
+  padding-left: 5px;
+}
+
+.percentage {
+  font-size: 10px;
+}
+
 .float-r {
   float: right;
 }
@@ -81,7 +102,15 @@ small-logo {
   float: left;
 }
 
+.float-c {
+  /* float: unset;  */
+  clear: both;
+}
 
-text-c {
+.text-c {
   text-align: center;
+}
+
+.w-parent {
+  width: inherit;
 }
