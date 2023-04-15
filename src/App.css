@@ -37,6 +37,10 @@ a:active {
   padding-right: 30px;
 }
 
+small-logo {
+  width: 10px;
+}
+
 .recenter {
   margin-left: 100px;
 }
@@ -55,7 +59,29 @@ a:active {
   padding: 5px 5px 5px 5px;  
 }
 
+.light-btn {
+  border: 1px solid #414A4E;
+  width: 95%;
+}
+
+.mid-line {
+  height: 1px;
+  background: black;
+  padding: 1px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .float-r {
   float: right;
 }
 
+.float-l {
+  float: left;
+}
+
+
+text-c {
+  text-align: center;
+}
