@@ -48,12 +48,12 @@ export default function Campaigns() {
 
 return (
 <>
-<div class="display-1 text-center small-logo">
-    <img className='small-logo' src="/images/logo.png" alt="Voice of influence" width="70px"/> 
-</div>
-        <div className='mid-line w-25 float-l'></div>
-        <div className='mid-line w-25 float-r'></div>
-        <div className="text-center">My Campaigns</div>
+    <div className="display-1 text-center small-logo">
+        <img className='small-logo' src="/images/logo.png" alt="Voice of influence" width="70px"/> 
+    </div>
+    <div className='mid-line w-25 float-l'></div>
+    <div className='mid-line w-25 float-r'></div>
+    <div className="text-center">My Campaigns</div>
         
     <RangePicker
         theme={theme}
@@ -61,7 +61,7 @@ return (
         onChange={dates => console.log("dates", dates)}
         responsive={handleResponsive} 
     />
-{/* <div className="btn btn-light menu-btn"><Link className="text-center" to='/'>Menu</Link></div> */}
+
     <p className='text-center'>
         <Link className='light-btn fw-bold btn' to='?active=true'>Active</Link>   
     </p>

@@ -6,27 +6,27 @@ export default function Profile() {
 let { id } = useParams();
 return (
 <>
-<div class="container mt-3">  
+<div className="container mt-3">  
   <div className='float-r'>
-    <Link class="btn btn-light menu-btn" to='/'>Menu</Link>
+    <Link className="btn btn-light menu-btn" to='/'>Menu</Link>
   </div>
-  <h1 class="text-center recenter">My Profile {id}</h1>
-  <div class="row">
-    <div class="col-sm">
-        <p class="text-center">
+  <h1 className="text-center recenter">My Profile {id}</h1>
+  <div className="row">
+    <div className="col-sm">
+        <p className="text-center">
             <img src="images/profile.png" alt="Girl in a jacket" width="200"  />
         </p>
-        <p class="text-center">Change Verificaton Picture</p>
-        <p class="text-center">Verified</p>
+        <p className="text-center">Change Verificaton Picture</p>
+        <p className="text-center">Verified</p>
     </div>
-    <div class="col-sm">
+    <div className="col-sm">
         <ul>
             <li>Name: John Johnson</li>
             <li>Town: London</li>
             <li>Channels
                 <ul>Instagram</ul>
                 <ul>Tik Tok</ul>
-                <ul class="btn btn-dark">Add Channel</ul>
+                <ul className="btn btn-dark">Add Channel</ul>
             </li>
             <li>
             {/* <Dropdown>
