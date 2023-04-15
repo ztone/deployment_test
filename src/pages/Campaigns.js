@@ -1,9 +1,43 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { DatePicker, RangePicker } from 'react-trip-date';
+import {ThemeProvider} from 'styled-components';
+
 export default function Campaigns() {
-let { id } = useParams();
+
+  let { id } = useParams();
+  const  handleResponsive  =  setNumberOfMonth  =>  {
+	let  width  =  document.querySelector('.tp-calendar').clientWidth;
+	if  (width  >  900)  {
+		setNumberOfMonth(3);
+	}  else  if  (width  <  900  &&  width  >  580)  {
+		setNumberOfMonth(2);
+	}  else  if  (width  <  580)  {
+		setNumberOfMonth(1);
+	}
+};
+
+  const  Day = ({  day  }) => {
+	return  (
+		<>
+			<p  className="date">{day.format('DD')}</p>
+			<p  className="date">7</p>
+		</>
+		);
+	};
+
+    //onChange = date => console.log(date)
+
 return (
 <>
+
+        <RangePicker
+          numberOfMonths={3}
+          onChange={dates => console.log("dates", dates)}
+		  responsive={handleResponsive} 
+        />
+
+
 <div className='container mt-3'>
 <div className="btn btn-light menu-btn"><Link className="text-center" to='/'>Menu</Link></div>
     

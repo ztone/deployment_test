@@ -8,19 +8,19 @@ return (
 <div className='float-r'>
     <Link className="btn btn-light menu-btn" to='/'>Menu</Link>
   </div>
-    <h1 class="text-center">Feldon Vally</h1>
-    <p class="text-center">Sutton Lane, Lower Brailes, OX15 5BB</p>
-    <p class="text-center">
+    <h1 className="text-center">Feldon Vally</h1>
+    <p className="text-center">Sutton Lane, Lower Brailes, OX15 5BB</p>
+    <p className="text-center">
         <img src="/images/felldonvalley-big.png" alt="Girl in a jacket" />
     </p>
-    <div class="container">
-    <div class="row">
-        <div class="col-sm">
+    <div className="container">
+    <div className="row">
+        <div className="col-sm">
             <p className="text-center fw-bold">Foodie Golf Campaign</p>
             <p className='box-text'>General description of hotel, facilities – more detailed info which can be used during the campaign posting</p>
             <p className='box-text'>Terms and conditions for the campaign to be shown here.</p>
         </div>
-        <div class="col-sm">
+        <div className="col-sm">
             <input type="date" id="start" name="trip-start"
                 value="2022-07-22"
                 min="2022-01-01" max="2022-12-31"></input>
@@ -30,7 +30,7 @@ return (
             </div>
         </div>
     </div>
-    <p class="text-center">
+    <p className="text-center">
         <Link className='btn btn-dark' to="enquire">Enquire</Link>
     </p>
     </div>
