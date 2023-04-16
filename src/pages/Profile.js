@@ -58,10 +58,6 @@ return (
         </div>
   </form>
   <Footer/>
-
-    <p className='text-center'>
-        <Link className="text-center" to='/'>Menu</Link>
-    </p>
 </div>
 </>
 );
