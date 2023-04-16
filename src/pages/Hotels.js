@@ -1,5 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import Footer from './Footer';
+
 export default function Hotels() {
 let { search } = useParams();
 return (
@@ -70,9 +72,7 @@ return (
         </div> 
       </div>
     </div>
-    <p className='footer text-center'>
-        <Link className="text-center" to='/'>Menu</Link>
-    </p>
+    <Footer />
   </div>
 </>
 );

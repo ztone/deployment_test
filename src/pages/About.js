@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import Footer from './Footer';
 
 export default function About() {
 let { id } = useParams();
@@ -19,9 +20,7 @@ return (
         <li><p className='fw-bold'>Andrew White	Commercial Director</p></li>
         <li><p className='fw-bold'>Paul Hermolle Development Director</p></li>
     </ul>
-    <p className='text-center'>
-        <Link className="text-center" to='/'>Menu</Link>
-    </p>
+    <Footer/>
 </div> 
 </>
 );

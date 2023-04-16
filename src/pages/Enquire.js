@@ -1,5 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import Footer from './Footer';
+
 export default function Campaigns() {
 let { id } = useParams();
 return (
@@ -13,9 +15,7 @@ return (
 
     <p class="text-center mt-5">Thank you for enquiring to promote Feldon Valley on 9th November 2022</p>
     <p class="text-center">Please wait for correspondence regarding the status of your Campaign.</p>
-    <p class="text-center">
-        <Link className='text-center' to="/hotels">Back to Hotels</Link>
-    </p>
+    <Footer />
 </>
 );
 }

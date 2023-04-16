@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import Footer from './Footer';
 
 export default function Menu() {
 return (
@@ -21,6 +22,7 @@ return (
             <li> <Link className='main-menu-btn fw-bold btn btn-light btn-lg w-75' to='about'>About VOi</Link> </li>
         </p>
     </ul>
+    <Footer />
 </>
 );
 }

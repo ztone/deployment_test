@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { DatePicker, RangePicker } from 'react-trip-date';
+import Footer from './Footer';
 
 export default function Hotel() {
   let { search } = useParams();
@@ -73,10 +74,8 @@ return (
         <p className='text-center mb-5'>
             <Link className='dark-btn fw-bold btn' to='enquire'>Enquire</Link>   
         </p>
-        <p className='footer text-center'>
-            <Link className="text-center" to='/'>Menu</Link>
-        </p>
     </div>
+    <Footer />
 </>
 );
 }

@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { DatePicker, RangePicker } from 'react-trip-date';
-import {ThemeProvider} from 'styled-components';
+import Footer from './Footer';
 
 export default function Campaigns() {
 
@@ -71,9 +71,7 @@ return (
     <p className='text-center'>
         <Link className='light-btn fw-bold btn' to='?completed=true'>Completed</Link>   
     </p>
-    <p className='text-center'>
-        <Link className="text-center" to='/'>Menu</Link>
-    </p>
+    <Footer />
 </>
 );
 }
