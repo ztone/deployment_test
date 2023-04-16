@@ -32,7 +32,12 @@ return (
         <div className='text-center title'>
           <Link to='hotel/1'>Feldon Vally</Link>
         </div>
-        <div className='text-center address'><img className='small-icon' src="/images/map-icon.png" alt="Map of Sutton Lane"/>Sutton Lane, Lower Brailes, OX15 5BB</div>
+        <div className='text-center address'>
+          <a href="https://goo.gl/maps/iQfYG5gdUuGQG9qs9">
+            <img className='small-icon' src="/images/map-icon.png" alt="Map of Sutton Lane"/>
+          </a>
+          Sutton Lane, Lower Brailes, OX15 5BB
+        </div>
         <div className="text-center title mt-1">Foodie Gold Campain</div>
         <div className='description'>2 nights accommodation in a main lodge standard room with 1 round of golf and breakfast each morning for creator + 1 guest.</div>
         <div className="row">
@@ -80,6 +85,67 @@ return (
         </div> 
       </div>
     </div>
+    <div className="row mt-2">
+      <div className="col-auto">
+        <Link to='hotel/1'><img className='float-l' src="images/pennyhillpark.png" alt="Penny Hill Park" width="100px" height="130px" /></Link>
+      </div>
+      <div className="col">
+        <div className='float-r'>
+          <img className='small-icon' src="/images/instagram-icon.png" alt="Instagram"/>
+          <img className='small-icon disabled' src="/images/tiktok-icon.png" alt="Tik Tok"/>
+        </div>
+        <div className='text-center title'>
+          <Link to='hotel/1'>Pennyhill Park</Link>
+        </div>
+        <div className='text-center address'><img className='small-icon' src="/images/map-icon.png" alt="Map of London Road"/>London Road, Bagshot, GU19 5EU</div>
+        <div className="text-center title mt-1">Afternoon Tea Campaign</div>
+        <div className='description'>1 nights accommodation in a standard room with afternoon tea on arrival for creator + 1 guest.</div>
+        <div className="row">
+          <div className="col text-center description">% offered</div>
+          <div className="col text-center description">Follwer discount</div>
+        </div> 
+        <div className="row">
+          <div className='col text-center percentage text-c'>6%</div>
+          <div className='col text-center percentage'>15%</div>
+        </div>
+        <div className="row">
+          <div className="col tag h-25">Foodie</div>
+          <div className="col tag">Couple</div>
+          <div className="col tag">Luxury</div>
+        </div> 
+      </div>
+    </div>
+    <div className="row mt-2">
+      <div className="col-auto">
+        <Link to='hotel/1'><img className='float-l' src="images/pennyhillpark.png" alt="Penny Hill Park" width="100px" height="130px" /></Link>
+      </div>
+      <div className="col">
+        <div className='float-r'>
+          <img className='small-icon' src="/images/instagram-icon.png" alt="Instagram"/>
+          <img className='small-icon disabled' src="/images/tiktok-icon.png" alt="Tik Tok"/>
+        </div>
+        <div className='text-center title'>
+          <Link to='hotel/1'>Pennyhill Park</Link>
+        </div>
+        <div className='text-center address'><img className='small-icon' src="/images/map-icon.png" alt="Map of London Road"/>London Road, Bagshot, GU19 5EU</div>
+        <div className="text-center title mt-1">Afternoon Tea Campaign</div>
+        <div className='description'>1 nights accommodation in a standard room with afternoon tea on arrival for creator + 1 guest.</div>
+        <div className="row">
+          <div className="col text-center description">% offered</div>
+          <div className="col text-center description">Follwer discount</div>
+        </div> 
+        <div className="row">
+          <div className='col text-center percentage text-c'>6%</div>
+          <div className='col text-center percentage'>15%</div>
+        </div>
+        <div className="row">
+          <div className="col tag h-25">Foodie</div>
+          <div className="col tag">Couple</div>
+          <div className="col tag">Luxury</div>
+        </div> 
+      </div>
+    </div>
+    <div className='mb-5'></div>
     <Footer />
   </div>
 </>

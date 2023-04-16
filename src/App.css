@@ -42,6 +42,7 @@ a:active {
   margin-top: -10px;
 }
 
+/* https://stackoverflow.com/questions/286275/gray-out-image-with-css */
 .disabled {
   opacity: 0.4;
   filter: alpha(opacity=40); /* msie */
@@ -147,10 +148,6 @@ a:active {
 .w-parent {
   width: inherit;
 }
-
-/* --------- */
-/* 3rd Party */
-/* --------- */
 
 /* https://www.30secondsofcode.org/css/s/input-with-prefix/ */
 .input-box {
