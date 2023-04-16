@@ -6,58 +6,60 @@ export default function Profile() {
 let { id } = useParams();
 return (
 <>
+    <div className="display-1 text-center small-logo">
+        <img className='small-logo' src="/images/logo.png" alt="Voice of influence" width="70px"/> 
+    </div>
+    <div className='mid-line w-25 float-l'></div>
+    <div className='mid-line w-25 float-r'></div>
+    <div className="text-center">My Profile</div>
 <div className="container mt-3">  
-  <div className='float-r'>
-    <Link className="btn btn-light menu-btn" to='/'>Menu</Link>
-  </div>
-  <h1 className="text-center recenter">My Profile {id}</h1>
   <div className="row">
-    <div className="col-sm">
-        <p className="text-center">
-            <img src="images/profile.png" alt="Girl in a jacket" width="200"  />
-        </p>
-        <p className="text-center">Change Verificaton Picture</p>
-        <p className="text-center">Verified</p>
+    <div className="col-auto">
+       <img src="images/profile.png" alt="My Profile" width="120"  />
     </div>
-    <div className="col-sm">
-        <ul>
-            <li>Name: John Johnson</li>
-            <li>Town: London</li>
-            <li>Channels
-                <ul>Instagram</ul>
-                <ul>Tik Tok</ul>
-                <ul className="btn btn-dark">Add Channel</ul>
-            </li>
-            <li>
-            {/* <Dropdown>
-                <Dropdown.Toggle id="dropdown-basic">
-                    Channels
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Golf</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Gym</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Fitness</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Lifestyle</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Travel</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Luxury</Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown> */}
-            </li>
-            {/* <li>Total multichannel audience</li> */}
-            <li>Tags
-                <ul>Gym</ul>
-                <ul>Travel</ul>
-                <ul>Silver required</ul>
-            </li>
-            {/* <li>Performance Insights</li> */}
-        </ul>
+    <div className="col">
+        <div className='text-center title fw-bold'>Profile Details</div>
+        <p className='information-text'>Name: Charlie Irons</p>
+        <p className='information-text'>Town/City: Chipping Norton</p>
+        <p className='information-text'>Followers: 86,458</p>
+        <p className='information-text'>Bio: Scraped from Instragram or write option to write own bio.</p>
+        <div className="row">
+          <div className="col tag h-25">Foodie</div>
+          <div className="col tag">Golf</div>
+          <div className="col tag">Wellness</div>
+        </div> 
     </div>
   </div>
+  <div className='text-center fw-b mt-2'>Edit</div>
+  <form action="/hotels">
+        
+        <div className="input-box w-100 mt-3">
+            <span className="prefix">Name:</span>
+            <input type="text" placeholder="Charlie Irons" name="username"/>
+        </div>
+
+        <div className="input-box w-100 mt-3">
+            <span className="prefix">Town\City:</span>
+            <input type="text" placeholder="Stratford Upon Avon" name="town"/>
+        </div>
+
+        <div className='mt-3'>Channels:</div>
+        <div className="input-box w-100 mt-2">
+            <span className="prefix">Insta</span>
+            <input type="text" placeholder="https://instagram" name="instagram"/>
+            <span className='channel-btn dark-btn w-25 text-center'>Upload</span>
+        </div>
+
+        <div className="input-box w-100 mt-2">
+            <span className="prefix">TikTok</span>
+            <input type="text" placeholder='' name="tiktok"/>
+            <span className='channel-btn dark-btn w-25 text-center'>Upload</span>
+        </div>
+  </form>
+    <p className='text-center'>
+        <Link className="text-center" to='/'>Menu</Link>
+    </p>
 </div>
-{/* <div>
-    Bio: <input type="text" placeholder='Area to write/edit bio'></input>
-</div> */}
 </>
 );
 }
