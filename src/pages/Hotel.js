@@ -59,7 +59,7 @@ return (
         </a>
         Sutton Lane, Lower Brailes, OX15 5BB
     </p>
-    <div className='container mt-3'>    
+    <div className='container mt-3'>
         <p className="text-center">
             <img className='w-100' src="/images/felldonvalley-big.png" alt="Girl in a jacket" />
         </p>
