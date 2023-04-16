@@ -25,11 +25,15 @@ return (
         <Link to='hotel/1'><img className='float-l' src="images/felldonvalley.png" alt="Felldon Valley" width="100px" height="130px" /></Link>
       </div>
       <div className="col">
+        <div className='float-r'>
+            <img className='small-icon' src="/images/instagram-icon.png" alt="Instagram"/>
+            <img className='small-icon' src="/images/tiktok-icon.png" alt="Tik Tok"/>
+        </div>
         <div className='text-center title'>
           <Link to='hotel/1'>Feldon Vally</Link>
         </div>
-        <p className='text-center address'>Sutton Lane, Lower Brailes, OX15 5BB</p>
-        <div className="text-center title">Foodie Gold Campain</div>
+        <div className='text-center address'><img className='small-icon' src="/images/map-icon.png" alt="Map of Sutton Lane"/>Sutton Lane, Lower Brailes, OX15 5BB</div>
+        <div className="text-center title mt-1">Foodie Gold Campain</div>
         <div className='description'>2 nights accommodation in a main lodge standard room with 1 round of golf and breakfast each morning for creator + 1 guest.</div>
         <div className="row">
           <div className="col text-center description">% offered</div>
@@ -46,16 +50,20 @@ return (
         </div> 
       </div>
     </div>
-    <div className="row">
+    <div className="row mt-2">
       <div className="col-auto">
         <Link to='hotel/1'><img className='float-l' src="images/pennyhillpark.png" alt="Penny Hill Park" width="100px" height="130px" /></Link>
       </div>
       <div className="col">
+        <div className='float-r'>
+          <img className='small-icon' src="/images/instagram-icon.png" alt="Instagram"/>
+          <img className='small-icon disabled' src="/images/tiktok-icon.png" alt="Tik Tok"/>
+        </div>
         <div className='text-center title'>
           <Link to='hotel/1'>Pennyhill Park</Link>
         </div>
-        <p className='text-center address'>London Road, Bagshot, GU19 5EU</p>
-        <div className="text-center title">Afternoon Tea Campaign</div>
+        <div className='text-center address'><img className='small-icon' src="/images/map-icon.png" alt="Map of London Road"/>London Road, Bagshot, GU19 5EU</div>
+        <div className="text-center title mt-1">Afternoon Tea Campaign</div>
         <div className='description'>1 nights accommodation in a standard room with afternoon tea on arrival for creator + 1 guest.</div>
         <div className="row">
           <div className="col text-center description">% offered</div>

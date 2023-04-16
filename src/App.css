@@ -37,8 +37,14 @@ a:active {
   padding-right: 30px;
 }
 
-small-logo {
-  width: 10px;
+.small-icon {
+  width: 15px;
+  margin-top: -10px;
+}
+
+.disabled {
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* msie */
 }
 
 .recenter {
@@ -107,7 +113,7 @@ small-logo {
 }
 
 .channel-icon {
-  width: 10%;
+  margin-left: -10px;
 }
 .channel-input {
   width: 60%;
@@ -142,7 +148,11 @@ small-logo {
   width: inherit;
 }
 
+/* --------- */
 /* 3rd Party */
+/* --------- */
+
+/* https://www.30secondsofcode.org/css/s/input-with-prefix/ */
 .input-box {
   display: flex;
   align-items: center;
@@ -174,6 +184,7 @@ small-logo {
   border-color: #414A4E;
 }
 
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_footer */
 .footer {
   position: fixed;
   left: 0;

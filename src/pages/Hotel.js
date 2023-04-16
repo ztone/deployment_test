@@ -53,7 +53,7 @@ return (
     <div className='mid-line w-25 float-l'></div>
     <div className='mid-line w-25 float-r'></div>
     <div className="text-center">Feldon Vally</div>
-    <p className="text-center">Sutton Lane, Lower Brailes, OX15 5BB</p>
+    <p className="text-center"><img className='small-icon' src="/images/map-icon.png" alt="Map of Sutton Lane"/>Sutton Lane, Lower Brailes, OX15 5BB</p>
     <div className='container mt-3'>    
         <p className="text-center">
             <img className='w-100' src="/images/felldonvalley-big.png" alt="Girl in a jacket" />
