@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
+import Footer from './Footer';
 
 export default function Profile() {
 let { id } = useParams();
@@ -56,6 +57,8 @@ return (
             <span className='channel-btn dark-btn w-25 text-center'>Upload</span>
         </div>
   </form>
+  <Footer/>
+
     <p className='text-center'>
         <Link className="text-center" to='/'>Menu</Link>
     </p>

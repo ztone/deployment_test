@@ -70,7 +70,7 @@ return (
         </div> 
       </div>
     </div>
-    <p className='text-center'>
+    <p className='footer text-center'>
         <Link className="text-center" to='/'>Menu</Link>
     </p>
   </div>

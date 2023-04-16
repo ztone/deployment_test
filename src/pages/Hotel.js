@@ -70,10 +70,10 @@ return (
         <p className='text-center'>
             <Link className='light-btn fw-bold btn' to=''>Terms & Conditions</Link>   
         </p>
-        <p className='text-center'>
+        <p className='text-center mb-5'>
             <Link className='dark-btn fw-bold btn' to='enquire'>Enquire</Link>   
         </p>
-        <p className='text-center'>
+        <p className='footer text-center'>
             <Link className="text-center" to='/'>Menu</Link>
         </p>
     </div>
