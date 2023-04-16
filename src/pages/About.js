@@ -8,7 +8,7 @@ return (
 <>
 <div className='container mt-3'>
     <div className="display-1 text-center mb-5">
-        <img src="/images/logo.png" alt="Voice of influence" /> 
+        <Link to='/'><img src="/images/logo.png" alt="Voice of influence" /></Link>
     </div>
     <div className='mid-line w-25 float-l'></div>
     <div className='mid-line w-25 float-r'></div>

@@ -7,7 +7,7 @@ let { search } = useParams();
 return (
 <>
   <div className="display-1 text-center small-logo">
-        <img className='small-logo' src="/images/logo.png" alt="Voice of influence" width="70px"/> 
+        <Link to="/"><img className='small-logo' src="/images/logo.png" alt="Voice of influence" width="70px"/></Link>
   </div>
   <div className="container mt-3">
     <form action="/hotels">
@@ -22,7 +22,7 @@ return (
 
     <div className="row">
       <div className="col-auto">
-        <img className='float-l' src="images/felldonvalley.png" alt="Felldon Valley" width="100px" height="130px" />
+        <Link to='hotel/1'><img className='float-l' src="images/felldonvalley.png" alt="Felldon Valley" width="100px" height="130px" /></Link>
       </div>
       <div className="col">
         <div className='text-center title'>
