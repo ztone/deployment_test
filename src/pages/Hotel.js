@@ -1,38 +1,81 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { DatePicker, RangePicker } from 'react-trip-date';
+
 export default function Hotel() {
-let { search } = useParams();
+  let { search } = useParams();
+
+  const  handleResponsive  =  setNumberOfMonth  =>  {
+	let  width  =  document.querySelector('.tp-calendar').clientWidth;
+	if  (width  >  900)  {
+		setNumberOfMonth(2);
+	}  else  if  (width  <  900  &&  width  >  580)  {
+		setNumberOfMonth(2);
+	}  else  if  (width  <  580)  {
+		setNumberOfMonth(1);
+	}
+};
+
+  const Day = ({  day  }) => {
+	return  (
+		<>
+			<p className="date">{day.format('DD')}</p>
+			<p className="date">7</p>
+		</>
+		);
+	};
+
+    const theme = {
+        primary: {
+          light: "#F3F3F7",
+          main: "#234E5A",
+          dark: "#234E5A",
+        },
+        grey: {
+          700: "#707070",
+          900: "#1b1b1d",
+        },
+        background: {
+          default: "#f5f5f5",
+        },
+        text: {
+          disabled: "#BABABA",
+        },
+      };
+
+
 return (
 <>
-<div className='container mt-3'>
-<div className='float-r'>
-    <Link className="btn btn-light menu-btn" to='/'>Menu</Link>
-  </div>
-    <h1 className="text-center">Feldon Vally</h1>
-    <p className="text-center">Sutton Lane, Lower Brailes, OX15 5BB</p>
-    <p className="text-center">
-        <img src="/images/felldonvalley-big.png" alt="Girl in a jacket" />
-    </p>
-    <div className="container">
-    <div className="row">
-        <div className="col-sm">
-            <p className="text-center fw-bold">Foodie Golf Campaign</p>
-            <p className='box-text'>General description of hotel, facilities – more detailed info which can be used during the campaign posting</p>
-            <p className='box-text'>Terms and conditions for the campaign to be shown here.</p>
-        </div>
-        <div className="col-sm">
-            <input type="date" id="start" name="trip-start"
-                value="2022-07-22"
-                min="2022-01-01" max="2022-12-31"></input>
-            <input type="date" id="end" name="trip-end"
-                value="2022-08-22"
-                min="2022-01-01" max="2022-12-31"></input>
-            </div>
-        </div>
+    <div className="display-1 text-center small-logo">
+        <img className='small-logo' src="/images/logo.png" alt="Voice of influence" width="70px"/> 
     </div>
-    <p className="text-center">
-        <Link className='btn btn-dark' to="enquire">Enquire</Link>
-    </p>
+    <div className='mid-line w-25 float-l'></div>
+    <div className='mid-line w-25 float-r'></div>
+    <div className="text-center">Feldon Vally</div>
+    <p className="text-center">Sutton Lane, Lower Brailes, OX15 5BB</p>
+    <div className='container mt-3'>    
+        <p className="text-center">
+            <img className='w-100' src="/images/felldonvalley-big.png" alt="Girl in a jacket" />
+        </p>
+        <p className="text-center">Foodie Golf Campaign</p>
+        <RangePicker
+            theme={theme}
+            numberOfMonths={2}
+            onChange={dates => console.log("dates", dates)}
+            responsive={handleResponsive} 
+        />
+        <p className='text-center'>
+            <Link className='light-btn fw-bold btn' to=''>Description</Link>   
+        </p>
+        <p className='text-center'>
+            <Link className='light-btn fw-bold btn' to=''>Terms & Conditions</Link>   
+        </p>
+        <p className='text-center'>
+            <Link className='dark-btn fw-bold btn' to='enquire'>Enquire</Link>   
+        </p>
+        <p className='text-center'>
+            <Link className="text-center" to='/'>Menu</Link>
+        </p>
     </div>
 </>
 );

@@ -68,6 +68,13 @@ small-logo {
   width: 95%;
 }
 
+.dark-btn {
+  background-color: #414A4E;
+  color: #F3F3F7!important;
+  border: 1px solid black;
+  width: 95%;
+}
+
 .mid-line {
   height: 1px;
   background: black;
