@@ -48,7 +48,7 @@ return (
     </div>
     <div className="row">
       <div className="col-auto">
-        <img className='float-l' src="images/pennyhillpark.png" alt="Penny Hill Park" width="100px" height="130px" />
+        <Link to='hotel/1'><img className='float-l' src="images/pennyhillpark.png" alt="Penny Hill Park" width="100px" height="130px" /></Link>
       </div>
       <div className="col">
         <div className='text-center title'>
