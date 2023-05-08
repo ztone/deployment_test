@@ -4,13 +4,13 @@ import { Link  } from 'react-router-dom';
 export default function ListMenu() {
 return (
     <>
-        <div className='list-btn fw-bold btn'>Calendar View</div><br/>
-        <div className='list-btn fw-bold btn'>List View</div><br/>
-        <div className='list-btn fw-bold btn'>Creator Applications</div><br/>
-        <div className='list-btn fw-bold btn'>Browse Creators</div><br/>
-        <div className='list-btn fw-bold btn'>My Personas</div><br/>
-        <div className='list-btn fw-bold btn'>Create Campain</div><br/>
-        <div className='list-btn fw-bold btn'>History</div>
+        <Link className='list-btn fw-bold btn' to='/calendar'>Calendar View</Link>
+        <Link className='list-btn fw-bold btn' to='/listview'>List View</Link>
+        <Link className='list-btn fw-bold btn' to='/creatorapp'>Creator Applications</Link>
+        <Link className='list-btn fw-bold btn' to='/browse'>Browse Creators</Link>
+        <Link className='list-btn fw-bold btn' to='/mypersonas'>My Personas</Link>
+        <Link className='list-btn fw-bold btn' to='/createcampain'>Create Campain</Link>
+        <Link className='list-btn fw-bold btn' to='/history'>History</Link>
     </>
 );
 }

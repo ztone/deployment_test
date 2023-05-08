@@ -19,6 +19,12 @@ import Menu from './pages/Creator/Menu';
 
 //Hotel
 import CalendarView from './pages/Hotel/CalendarView';
+import ListView from './pages/Hotel/ListView';
+import CreatorApp from './pages/Hotel/CreatorApp';
+import BrowseCreators from './pages/Hotel/BrowseCreators';
+import MyPersonas from './pages/Hotel/MyPersonas';
+import CreateCampain from './pages/Hotel/CreateCampain';
+import History from './pages/Hotel/History';
 
 //css
 import "./App.css"
@@ -66,6 +72,30 @@ class App extends Component {
       {
         path: "calendar",
         element: <CalendarView />,
+      },
+      {
+        path: "listview",
+        element: <ListView />,
+      },
+      {
+        path: "creatorapp",
+        element: <CreatorApp />,
+      },
+      {
+        path: "browse",
+        element: <BrowseCreators />,
+      },
+      {
+        path: "mypersonas",
+        element: <MyPersonas />,
+      },
+      {
+        path: "createcampain",
+        element: <CreateCampain />,
+      },
+      {
+        path: "history",
+        element: <History />,
       },
     ]);
   
