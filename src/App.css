@@ -137,6 +137,11 @@ a:active {
   padding-left: 5px;
 }
 
+.list-text {
+  font-size: 10px;
+  border: 1px solid #414A4E;
+}
+
 .channel-icon {
   margin-left: -10px;
 }
