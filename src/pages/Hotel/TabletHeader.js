@@ -7,7 +7,7 @@ return (
         {/* Header */}
         <div className="row w-100">
             <div className="col">
-            <div className="text-left logo pr-3">
+            <div className="logo">
                 <Link to="/calendar"><img className='logo' src="/images/logo.png" alt="Voice of influence"/></Link>
             </div>
             </div>
