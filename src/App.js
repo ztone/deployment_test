@@ -7,15 +7,15 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import Root from './pages/Root';
-import Hotels from './pages/Hotels';
-import Hotel from './pages/Hotel';
-import Enquire from './pages/Enquire';
-import Campaigns from './pages/Campaigns';
-import Profile from './pages/Profile';
-import About from './pages/About';
+import Root from './pages/Creator/Root';
+import Hotels from './pages/Creator/Hotels';
+import Hotel from './pages/Creator/Hotel';
+import Enquire from './pages/Creator/Enquire';
+import Campaigns from './pages/Creator/Campaigns';
+import Profile from './pages/Creator/Profile';
+import About from './pages/Creator/About';
 import "./App.css"
-import Menu from './pages/Menu';
+import Menu from './pages/Creator/Menu';
 
 class App extends Component {
 
