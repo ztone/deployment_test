@@ -42,6 +42,11 @@ a:active {
   margin-top: -10px;
 }
 
+.small-logo {
+  width: 70px;
+
+}
+
 /* https://stackoverflow.com/questions/286275/gray-out-image-with-css */
 .disabled {
   opacity: 0.4;
@@ -80,6 +85,25 @@ a:active {
   color: #F3F3F7!important;
   border: 1px solid black;
   width: 95%;
+}
+
+.list-btn {
+  background-color: #234E5A;
+  color: #F3F3F7!important;
+  border: 1px solid black;
+  width: 95%;
+  padding: 8%;
+  border-radius: 0px;
+}
+
+.tablet-header-bth {
+  background-color: #234E5A;
+  color: #F3F3F7!important;
+  border: 1px solid black;
+  width: 100px;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 20px;
 }
 
 .white-box {
@@ -145,6 +169,13 @@ a:active {
   text-align: center;
 }
 
+.text-r {
+  text-align: right;
+}
+
+.text-l {
+  text-align: left;
+}
 .w-parent {
   width: inherit;
 }

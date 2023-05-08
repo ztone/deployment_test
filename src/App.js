@@ -7,6 +7,7 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
+//Creators
 import Root from './pages/Creator/Root';
 import Hotels from './pages/Creator/Hotels';
 import Hotel from './pages/Creator/Hotel';
@@ -14,9 +15,13 @@ import Enquire from './pages/Creator/Enquire';
 import Campaigns from './pages/Creator/Campaigns';
 import Profile from './pages/Creator/Profile';
 import About from './pages/Creator/About';
-import "./App.css"
 import Menu from './pages/Creator/Menu';
 
+//Hotel
+import CalendarView from './pages/Hotel/CalendarView';
+
+//css
+import "./App.css"
 class App extends Component {
 
   constructor(props) {
@@ -57,6 +62,10 @@ class App extends Component {
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "calendar",
+        element: <CalendarView />,
       },
     ]);
   
