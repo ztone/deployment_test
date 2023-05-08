@@ -5,6 +5,7 @@ import FullCalendar, { formatDate } from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
+import listPlugin from '@fullcalendar/list'; //For List View
 import TabletHeader from './TabletHeader';
 import ListMenu from './ListMenu';
 
@@ -73,11 +74,11 @@ return (
     <div className="col-9">
       <div className='container'>
       <FullCalendar
-        plugins={[dayGridPlugin , timeGridPlugin, interactionPlugin ]}
+        plugins={[dayGridPlugin , timeGridPlugin, interactionPlugin, listPlugin ]}
         headerToolbar={{
           left: 'prev,next today',
           center: 'title',
-          right: 'dayGridMonth,timeGridWeek,timeGridDay'
+          right: 'dayGridMonth,timeGridWeek,timeGridDay,list'
         }}
         initialView='dayGridMonth'
         editable={true}
