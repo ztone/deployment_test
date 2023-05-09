@@ -13,8 +13,10 @@ return (
     <div className='mid-line w-25 float-r'></div>
     <div className="text-center">Enquire</div>
 
-    <p class="text-center mt-5">Thank you for enquiring to promote Feldon Valley on 9th November 2022</p>
-    <p class="text-center">Please wait for correspondence regarding the status of your Campaign.</p>
+    <div className='container'>
+        <p className="text-center mt-5">Thank you for enquiring to promote Feldon Valley on 9th November 2022</p>
+        <p className="text-center">Please wait for correspondence regarding the status of your Campaign.</p>
+    </div>
     <Footer />
 </>
 );

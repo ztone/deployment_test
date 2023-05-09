@@ -8,7 +8,6 @@ import {
   Link,
 } from 'react-router-dom';
 //Creators
-import Root from './pages/Creator/Root';
 import Hotels from './pages/Creator/Hotels';
 import Hotel from './pages/Creator/Hotel';
 import Enquire from './pages/Creator/Enquire';
