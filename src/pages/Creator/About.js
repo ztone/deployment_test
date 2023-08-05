@@ -8,7 +8,7 @@ let { id } = useParams();
 return (
 <>
     <div className="display-1 text-center mb-5">
-        <Link to='/'><img src="/images/logo.png" alt="Voice of influence" /></Link>
+        <Link to='/menu'><img src="/images/logo.png" alt="Voice of influence" /></Link>
     </div>
     <div className='mid-line w-25 float-l'></div>
     <div className='mid-line w-25 float-r'></div>

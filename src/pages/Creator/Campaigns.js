@@ -49,7 +49,7 @@ export default function Campaigns() {
 return (
 <>
     <div className="display-1 text-center">
-        <Link to='/'><img className='small-logo' src="/images/logo.png" alt="Voice of influence" /></Link>
+        <Link to='/menu'><img className='small-logo' src="/images/logo.png" alt="Voice of influence" /></Link>
     </div>
     <div className='mid-line w-25 float-l'></div>
     <div className='mid-line w-25 float-r'></div>

@@ -7,6 +7,10 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
+
+//Main
+import Login from './pages/Login';
+
 //Creators
 import Hotels from './pages/Creator/Hotels';
 import Hotel from './pages/Creator/Hotel';
@@ -42,6 +46,9 @@ class App extends Component {
     const router = createBrowserRouter([
       {
         path: "/",
+        element: <Login />,
+      },{
+        path: "/menu",
         element: <Menu />,
       },
       {

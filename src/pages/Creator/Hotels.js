@@ -7,7 +7,7 @@ let { search } = useParams();
 return (
 <>
   <div className="display-1 text-center">
-        <Link to="/"><img className='small-logo' src="/images/logo.png" alt="Voice of influence" width="70px"/></Link>
+        <Link to="/menu"><img className='small-logo' src="/images/logo.png" alt="Voice of influence" width="70px"/></Link>
   </div>
   <div className="container mt-3">
     <form action="/hotels">
